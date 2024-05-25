@@ -9,7 +9,7 @@ function Hero({ changeMenu }) {
           reach the stars
         </p>
         <button onClick={() => changeMenu(1)} className="custom-solid-button">
-          discover the new era
+          discover a new era of smartphones
         </button>
       </div>
     </>
