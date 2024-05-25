@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useRef, useState } from "react";
 import { Transition } from "react-transition-group";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
@@ -8,6 +8,7 @@ import Preordering from "./components/Preordering";
 
 function App() {
   const [currentMenu, setCurrentMenu] = useState(0);
+  const nodeRef = useRef();
 
   const changeMenu = (value) => {
     setCurrentMenu(value);
@@ -38,9 +39,11 @@ function App() {
         key={currentMenu}
         mountOnEnter
         unmountOnExit
+        nodeRef={nodeRef}
       >
         {(state) => (
           <div
+            ref={nodeRef}
             className={`transition-opacity duration-500 ${
               state === "entering" || state === "entered"
                 ? "opacity-100"
