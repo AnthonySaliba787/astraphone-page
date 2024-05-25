@@ -6,7 +6,7 @@ function Features({ changeMenu }) {
   return (
     <>
       <div className="custom-container">
-        <h1 className="text-3xl font-medium py-2 px-2">Features</h1>
+        <h1 className="text-3xl font-medium py-4 px-2">Features</h1>
         <div className="w-full flex flex-col md:flex-row px-4 py-4 gap-4 flex-wrap justify-center items-center">
           <div className="card card-image-cover hover:scale-[1.02] duration-300">
             <img src={circuit} alt="" className="aspect-video" />
