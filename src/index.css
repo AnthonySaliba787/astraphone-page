@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Classes */
+@layer components {
+  .custom-container {
+    @apply container flex flex-col justify-center items-center py-4 px-4;
+  }
+
+  .custom-solid-button {
+    @apply btn btn-solid-primary uppercase my-4 font-medium;
+  }
+}
+
 /* Animated Background CSS */
 @keyframes move {
   100% {
