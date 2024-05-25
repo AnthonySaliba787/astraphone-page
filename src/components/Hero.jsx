@@ -6,7 +6,7 @@ function Hero({ changeMenu }) {
           AstraPhone X
         </h1>
         <p className="text-lg md:text-xl text-center font-medium tracking-widest uppercase text-blue-500">
-          reach the stars
+          embrace the digital age
         </p>
         <button onClick={() => changeMenu(1)} className="custom-solid-button">
           discover a new era of smartphones
