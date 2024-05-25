@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animated Background CSS */
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #1a1a1a;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background span {
+  width: 11vmin;
+  height: 11vmin;
+  border-radius: 11vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 37;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.background span:nth-child(0) {
+  color: #006adb;
+  top: 33%;
+  left: 60%;
+  animation-duration: 82s;
+  animation-delay: -5s;
+  transform-origin: 17vw -24vh;
+  box-shadow: 22vmin 0 3.153892483378827vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #006adb;
+  top: 15%;
+  left: 78%;
+  animation-duration: 35s;
+  animation-delay: -51s;
+  transform-origin: 17vw -23vh;
+  box-shadow: 22vmin 0 3.4760741473918353vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #006adb;
+  top: 70%;
+  left: 46%;
+  animation-duration: 116s;
+  animation-delay: -8s;
+  transform-origin: 2vw 5vh;
+  box-shadow: 22vmin 0 3.4768012351625623vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #006adb;
+  top: 29%;
+  left: 27%;
+  animation-duration: 25s;
+  animation-delay: -119s;
+  transform-origin: 6vw 22vh;
+  box-shadow: 22vmin 0 2.9569169615144015vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #006adb;
+  top: 14%;
+  left: 36%;
+  animation-duration: 56s;
+  animation-delay: -73s;
+  transform-origin: 7vw 0vh;
+  box-shadow: 22vmin 0 3.491641447194654vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #006adb;
+  top: 71%;
+  left: 48%;
+  animation-duration: 25s;
+  animation-delay: -65s;
+  transform-origin: 10vw -14vh;
+  box-shadow: 22vmin 0 3.6035846915852296vmin currentColor;
+}
